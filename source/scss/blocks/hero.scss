@@ -1,0 +1,79 @@
+.hero {
+  background-image: url('../../img/back-desktop.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 389px;
+  position: relative;
+  z-index: 0;
+  &::after {
+    height: 57px;
+    width: 100%;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background-image: url('../../img/intro-triangle.svg');
+    background-position: center;
+    bottom: 0;
+  }
+  &::before {
+    width: 100%;
+    height: 214px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background-image: url('../../img/text-index.svg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    top: 90px;
+  }
+}
+
+.hero--form-photo-catalog {
+  height: 158px;
+  &::before {
+    height: 158px;
+    top: 0;
+    width: 100%;
+    content: '';
+    position: absolute;
+    background-image: url('../../img/SEDONA.svg');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    height: 518px;
+    &::before {
+      background-image: url('../../img/text-index-tablet-desktop.svg');
+      background-size: 460px 350px;
+      height: auto;
+      top: 0;
+    }
+  }
+  .hero--form-photo-catalog {
+    height: 301px;
+    &::before {
+      height: 301px;
+      top: 0;
+      width: 100%;
+      content: '';
+      position: absolute;
+      background-image: url('../../img/SEDONA.svg');
+      background-position: center;
+      background-size: 457px 78px;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

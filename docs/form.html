@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sedona</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="page-body">
+    <h1 class="visually-hidden">Welcome to Sedona</h1>
+    <header class="header for-modal-window">
+      <!-- logo -->
+      <a class="header__logo">
+        <picture>
+          <source media="(min-width: 900px)" srcset="./img/logo-desktop.svg" />
+          <img
+            class="logo__image"
+            width="102"
+            height="84"
+            src="./img/logo-mobile.svg"
+            alt="Логотип города Седона"
+          />
+        </picture>
+      </a>
+      <!-- site navigation -->
+      <nav class="header-navigation">
+        <button class="header-navigation_burger-menu">
+          <div class="header-navigation_burger-menu-btn"></div>
+        </button>
+        <ul class="header-navigation_list">
+          <li class="header-navigation_list-item js-list-item">
+            <a class="header-navigation_list-link" href="index.html">Главная</a>
+          </li>
+          <li class="header-navigation_list-item js-list-item">
+            <a class="header-navigation_list-link" href="photo-catalog.html"
+              >ФОТО И ВИДЕО</a
+            >
+          </li>
+          <li class="header-navigation_list-item js-list-item">
+            <a class="header-navigation_list-link" href="">Форма Отзыва</a>
+          </li>
+          <li class="header-navigation_list-item js-list-item">
+            <a class="header-navigation_list-link" href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main for-modal-window">
+      <header class="hero hero--form-photo-catalog">
+        <h2 class="visually-hidden">Добро пожаловать в великолепную Седону!</h2>
+        <p class="visually-hidden"><b>Мы круче, чем Гранд Каньон!</b></p>
+      </header>
+      <section class="form_description">
+        <h2 class="form_description-title">Оставьте свой отзыв</h2>
+        <p class="form_description-description">
+          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях
+        </p>
+      </section>
+      <section class="form">
+        <form class="form_form" action="" method="POST">
+          <fieldset class="form_fieldset form_fieldset--fullname">
+            <legend class="form_legend">Представьтесь:</legend>
+            <div class="form_fullname-input-wrapper">
+              <label class="form_input-fullname-label" for="name">ИМЯ*:</label
+              ><input
+                class="form_input-fullname text-input"
+                name="name"
+                id="name"
+                type="text"
+                placeholder="Петр"
+                required
+              />
+            </div>
+            <div class="form_fullname-input-wrapper">
+              <label class="form_input-fullname-label" for="surname"
+                >ФАМИЛИЯ*:</label
+              ><input
+                class="form_input-fullname text-input"
+                name="surname"
+                id="surname"
+                type="text"
+                placeholder="Иванов"
+                required
+              />
+            </div>
+            <div class="form_fullname-input-wrapper">
+              <label class="form_input-fullname-label" for="lastname"
+                >Отчество:</label
+              ><input
+                class="form_input-fullname text-input"
+                name="lastname"
+                id="lastname"
+                type="text"
+                placeholder="Александрович"
+              />
+            </div>
+          </fieldset>
+          <fieldset class="form_contacts form_fieldset">
+            <legend class="form_legend form_legend--contacts">
+              Контактная информация:
+            </legend>
+            <ul class="form_contacts-list">
+              <li class="form_contacts-list-item">
+                <label class="form_contacts-list-input-label" for="tel"
+                  ><span class="span">Контактный</span> телефон*:</label
+                >
+                <div class="form_input-contacts-wrapper">
+                  <input
+                    type="tel"
+                    class="form_input-tel text-input"
+                    name="tel"
+                    id="tel"
+                    placeholder="Введите телефон"
+                    required
+                  />
+                  <div class="icon-tel"></div>
+                </div>
+              </li>
+              <li class="form_contacts-list-item">
+                <label class="form_contacts-list-input-label" for="email"
+                  >Электронная почта*:</label
+                >
+                <div class="form_input-contacts-wrapper">
+                  <input
+                    type="email"
+                    class="form_input-email text-input"
+                    name="email"
+                    id="email"
+                    placeholder="Введите e-mail"
+                    required
+                  />
+                  <div class="icon-email"></div>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form_fieldset form_radio-buttons">
+            <legend class="form_legend">ВАше Общее впечатление:</legend>
+            <ul class="form_radio-buttons-list">
+              <li class="form_radio-buttons-list-item">
+                <input
+                  class="form_radio-button"
+                  type="radio"
+                  name="radio-button"
+                  id="radio-button-1"
+                  checked
+                /><label class="form_radio-buttons-label" for="radio-button-1"
+                  >Скорее положительное</label
+                >
+              </li>
+              <li class="form_radio-buttons-list-item">
+                <input
+                  class="form_radio-button"
+                  type="radio"
+                  name="radio-button"
+                  id="radio-button-2"
+                /><label class="form_radio-buttons-label" for="radio-button-2"
+                  >Скорее отрицательное</label
+                >
+              </li>
+              <li class="form_radio-buttons-list-item">
+                <input
+                  class="form_radio-button"
+                  type="radio"
+                  name="radio-button"
+                  id="radio-button-3"
+                /><label class="form_radio-buttons-label" for="radio-button-3"
+                  >Затрудняюсь ответить</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form_fieldset form_fieldset--before">
+            <legend class="form_legend form_legend-checkbox">
+              посещенные <br />
+              достопримечательности:
+            </legend>
+            <ul class="form_attractions-list">
+              <li class="form_attractions-list-item">
+                <input
+                  class="form_attractions-list-checkbox"
+                  type="checkbox"
+                  name="checkbox"
+                  id="checkbox-1"
+                  checked
+                />
+                <label
+                  class="form_attractions-list-checkbox-label"
+                  for="checkbox-1"
+                  >Мост Дьявола</label
+                >
+              </li>
+              <li class="form_attractions-list-item">
+                <input
+                  class="form_attractions-list-checkbox"
+                  type="checkbox"
+                  name="checkbox"
+                  id="checkbox-2"
+                  checked
+                />
+                <label
+                  class="form_attractions-list-checkbox-label"
+                  for="checkbox-2"
+                  >Гора-Колокол</label
+                >
+              </li>
+              <li class="form_attractions-list-item">
+                <input
+                  class="form_attractions-list-checkbox"
+                  type="checkbox"
+                  name="checkbox"
+                  id="checkbox-3"
+                  checked
+                />
+                <label
+                  class="form_attractions-list-checkbox-label"
+                  for="checkbox-3"
+                  >Слайд-парк</label
+                >
+              </li>
+              <li class="form_attractions-list-item">
+                <input
+                  class="form_attractions-list-checkbox"
+                  type="checkbox"
+                  name="checkbox"
+                  id="checkbox-4"
+                />
+                <label
+                  class="form_attractions-list-checkbox-label"
+                  for="checkbox-4"
+                  >Красные скалы</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form_fieldset form_comment-field">
+            <legend class="form_legend form_legend-textarea">
+              Опишите свои эмоции:
+            </legend>
+            <textarea
+              placeholder="Опишите подробно все свои восторги "
+              class="text-input form_comment-textarea"
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </fieldset>
+          <div class="form_submit-button-wrapper">
+            <button class="form_submit-button" type="submit">
+              ОТПРАВИТЬ ОТЗЫВ
+            </button>
+            <p class="form_submit-button-description">* — обязательные поля</p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer for-modal-window">
+      <p class="footer_hashtag">#visitsedona</p>
+      <ul class="social-list">
+        <li class="social-list_item">
+          <a class="social_list-item-link" href=""
+            ><img
+              class="social-list-icon-twitter hover"
+              src="img/icon-twitter.svg.svg"
+              alt="twitter"
+          /></a>
+        </li>
+        <li class="social-list_item">
+          <a class="social_list-item-link" href=""
+            ><img
+              class="social-list-icon-facebook hover"
+              src="img/icon-facebook.svg.svg"
+              alt="facebook"
+          /></a>
+        </li>
+        <li class="social-list_item">
+          <a class="social_list-item-link" href=""
+            ><img
+              class="social-list-icon-youtube hover"
+              src="img/icon-youtube.svg.svg"
+              alt="youtube"
+          /></a>
+        </li>
+      </ul>
+      <a href="#" class="copyright">
+        <p class="copyright_text">разработано</p>
+        <svg
+          class="copyright_icon"
+          width="27"
+          height="35"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z"
+          />
+        </svg>
+      </a>
+    </footer>
+    <!-- modal-window-error -->
+    <div class="modal-window-error">
+      <h3 class="modal-window-error-title">Что-то пошло не так!</h3>
+      <p class="modal-window-error-text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button class="modal-window-error_button">
+        <p class="modal-window-error_button-text">Ок</p>
+      </button>
+    </div>
+
+    <script src="js/burger-menu.min.js"></script>
+    <script src="js/modal-window.min.js"></script>
+    <script src="js/nav.min.js"></script>
+  </body>
+</html>

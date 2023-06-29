@@ -1,0 +1,50 @@
+.about-sedona {
+  padding-top: 32px;
+}
+
+.about-sedona_title {
+  max-width: 260px;
+  font-size: 18px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 32px;
+}
+
+.about-sedona_description {
+  font-size: 14px;
+  max-width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding-bottom: 32px;
+}
+@media (min-width: $tablet-width) {
+  .about-sedona {
+    padding-top: 45px;
+  }
+  .about-sedona_title {
+    font-size: 21px;
+    max-width: 480px;
+    margin-bottom: 45px;
+  }
+  .about-sedona_description {
+    padding-bottom: 45px;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-sedona {
+    padding-top: 55px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .about-sedona_title {
+    margin-bottom: 55px;
+  }
+  .about-sedona_description {
+    padding-bottom: 55px;
+  }
+}

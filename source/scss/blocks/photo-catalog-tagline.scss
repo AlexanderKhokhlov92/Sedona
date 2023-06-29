@@ -1,0 +1,35 @@
+.photo-catalog-tagline {
+  border-top: 1px solid $input-background;
+}
+
+.photo-catalog-tagline_title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 32px;
+}
+
+.photo-catalog-tagline_text {
+  max-width: 260px;
+  margin: 0 auto;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-catalog-tagline {
+    border: none;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .photo-catalog-tagline_title {
+    font-size: 30px;
+    padding-top: 59px;
+  }
+  .photo-catalog-tagline_text {
+    max-width: 445px;
+    padding-top: 59px;
+  }
+}

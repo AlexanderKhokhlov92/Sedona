@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sedona</title>
+    <link rel="icon" type="image/x-icon" href="/source/favicon.ico" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="page-body">
+    <h1 class="visually-hidden">Welcome to Sedona</h1>
+    <header class="header">
+      <!-- logo -->
+      <a class="header__logo">
+        <picture>
+          <source media="(min-width: 900px)" srcset="./img/logo-desktop.svg" />
+          <img
+            class="logo__image"
+            width="102"
+            height="84"
+            src="./img/logo-mobile.svg"
+            alt="Логотип города Седона"
+          />
+        </picture>
+      </a>
+      <!-- site navigation -->
+      <nav class="header-navigation">
+        <button class="header-navigation_burger-menu">
+          <div class="header-navigation_burger-menu-btn"></div>
+        </button>
+        <ul class="header-navigation_list">
+          <li class="header-navigation_list-item js-list-item">
+            <a class="header-navigation_list-link" href="index.html">Главная</a>
+          </li>
+          <li class="header-navigation_list-item js-list-item">
+            <a class="header-navigation_list-link" href="">ФОТО И ВИДЕО</a>
+          </li>
+          <li class="header-navigation_list-item js-list-item">
+            <a class="header-navigation_list-link" href="form.html"
+              >Форма Отзыва</a
+            >
+          </li>
+          <li class="header-navigation_list-item js-list-item">
+            <a class="header-navigation_list-link" href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <header class="hero hero--form-photo-catalog">
+        <h2 class="visually-hidden">Добро пожаловать в великолепную Седону!</h2>
+        <p class="visually-hidden"><b>Мы круче, чем Гранд Каньон!</b></p>
+      </header>
+      <section class="form_description">
+        <h2 class="form_description-title">Фото и видео</h2>
+        <p class="form_description-description">
+          Не можете решиться на путешествие из-за курса?Фотографии помогут вам
+          забыть о политике и экономике.
+        </p>
+      </section>
+      <section class="photo-catalog">
+        <ul class="photo-catalog_list">
+          <li class="photo-catalog_list-item">
+            <figure
+              class="photo-catalog_card-wrapper photo-catalog_card-wrapper--main"
+            >
+              <div
+                class="photo-catalog_image-wrapper photo-catalog_image-wrapper--main"
+              >
+                <img
+                  class="photo-catalog_image photo-catalog_image--main"
+                  src="img/photo-catalog-photo-1.jpg.jpg"
+                  alt="Фотография улицы"
+                />
+              </div>
+              <figcaption class="photo-catalog_description">
+                <p class="photo-catalog_description-text">неродные просторы</p>
+                <p class="photo-catalog_description-author">
+                  Автор фото:<span class="photo-catalog_description-author-name"
+                    >Борис</span
+                  >
+                </p>
+                <div class="like-counter_wrapper">
+                  <button class="like-counter_like-button">
+                    <svg
+                      class="like-counter_like-icon"
+                      width="23"
+                      height="21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.964 3.78l-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62zM2.09 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.418.315-.627.84-.627 1.47v10.5a2.1 2.1 0 002.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23a2.1 2.1 0 00-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0zM4.182 8.4H0V21h4.182V8.4z"
+                      />
+                    </svg>
+                  </button>
+                  <p class="like-counter_like-number">1350</p>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="photo-catalog_list-item">
+            <figure class="photo-catalog_card-wrapper">
+              <div class="photo-catalog_image-wrapper">
+                <img
+                  class="photo-catalog_image"
+                  src="img/photo-catalog-photo-2.jpg.jpg"
+                  alt="Фотография цветов"
+                />
+              </div>
+              <figcaption class="photo-catalog_description">
+                <p class="photo-catalog_description-text">
+                  Местная растительность
+                </p>
+                <p class="photo-catalog_description-author">
+                  Автор фото:<span class="photo-catalog_description-author-name"
+                    >Сергей</span
+                  >
+                </p>
+                <div class="like-counter_wrapper">
+                  <button class="like-counter_like-button">
+                    <svg
+                      class="like-counter_like-icon"
+                      width="23"
+                      height="21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.964 3.78l-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62zM2.09 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.418.315-.627.84-.627 1.47v10.5a2.1 2.1 0 002.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23a2.1 2.1 0 00-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0zM4.182 8.4H0V21h4.182V8.4z"
+                      />
+                    </svg>
+                  </button>
+                  <p class="like-counter_like-number">1350</p>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="photo-catalog_list-item">
+            <figure class="photo-catalog_card-wrapper">
+              <div class="photo-catalog_image-wrapper">
+                <img
+                  class="photo-catalog_image"
+                  src="img/photo-catalog-photo-3.jpg"
+                  alt="Фотография горной дороги"
+                />
+              </div>
+              <figcaption class="photo-catalog_description">
+                <p class="photo-catalog_description-text">Дорога на север</p>
+                <p class="photo-catalog_description-author">
+                  Автор фото:<span class="photo-catalog_description-author-name"
+                    >Петр</span
+                  >
+                </p>
+                <div class="like-counter_wrapper">
+                  <button class="like-counter_like-button">
+                    <svg
+                      class="like-counter_like-icon"
+                      width="23"
+                      height="21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.964 3.78l-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62zM2.09 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.418.315-.627.84-.627 1.47v10.5a2.1 2.1 0 002.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23a2.1 2.1 0 00-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0zM4.182 8.4H0V21h4.182V8.4z"
+                      />
+                    </svg>
+                  </button>
+                  <p class="like-counter_like-number">1350</p>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="photo-catalog_list-item">
+            <figure class="photo-catalog_card-wrapper">
+              <div class="photo-catalog_image-wrapper">
+                <img
+                  class="photo-catalog_image"
+                  src="img/photo-catalog-photo-4.jpg"
+                  alt="Фотография каньона"
+                />
+              </div>
+              <figcaption class="photo-catalog_description">
+                <p class="photo-catalog_description-text">Мост дьявола</p>
+                <p class="photo-catalog_description-author">
+                  Автор фото:<span class="photo-catalog_description-author-name"
+                    >Антон</span
+                  >
+                </p>
+                <div class="like-counter_wrapper">
+                  <button class="like-counter_like-button">
+                    <svg
+                      class="like-counter_like-icon"
+                      width="23"
+                      height="21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.964 3.78l-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62zM2.09 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.418.315-.627.84-.627 1.47v10.5a2.1 2.1 0 002.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23a2.1 2.1 0 00-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0zM4.182 8.4H0V21h4.182V8.4z"
+                      />
+                    </svg>
+                  </button>
+                  <p class="like-counter_like-number">1350</p>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <section class="photo-catalog-tagline">
+        <p class="photo-catalog-tagline_title">Все еще сомневаетесь?</p>
+        <p class="photo-catalog-tagline_text">
+          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
+          в очередной раз!
+        </p>
+      </section>
+      <section class="video-player">
+        <div class="video-player_wrapper">
+          <video class="video" src="img/video_optimized.mp4"></video>
+        </div>
+        <div class="video-player_control-pannel">
+          <button
+            class="video-player_play-pause-repeat-button"
+            title="Воспроизвести"
+          ></button>
+          <div class="video-player-time-range-wrapper">
+            <input
+              class="video-player-time-range"
+              type="range"
+              min="0"
+              value="0"
+            />
+          </div>
+          <div class="video-player_right-buttons-wrapper">
+            <button class="video-player_subtitles-button">
+              <svg
+                width="32"
+                height="20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M29 0H3C1.3 0 0 1.3 0 3v14c0 1.7 1.3 3 3 3h26c1.7 0 3-1.3 3-3V3c0-1.7-1.3-3-3-3zM14.4 15.9c-.5.1-1.1.1-1.7.1-.7 0-1.4-.1-2-.3-.6-.2-1.2-.6-1.6-1-.4-.4-.8-1.1-1.1-1.9-.3-.8-.4-1.7-.4-2.8 0-1.1.2-2.1.5-2.9.3-.8.7-1.4 1.2-1.9s1.1-.8 1.7-1c.5-.1 1.2-.2 1.8-.2.7 0 1.2 0 1.7.1s.8.2 1.1.3l-.4 1.9-.9-.3H13c-.9 0-1.6.3-2.2 1-.6.7-.8 1.7-.8 3 0 .6.1 1.1.2 1.6s.3.9.6 1.3c.3.3.6.6 1 .8.4.2.9.3 1.4.3.5 0 .9 0 1.3-.1.3-.1.6-.2.9-.4l.5 1.8c-.5.3-1 .4-1.5.6zm8.7 0c-.5.1-1.1.1-1.7.1-.7 0-1.4-.1-2-.3-.6-.2-1.2-.6-1.6-1-.5-.5-.9-1.1-1.1-1.9-.3-.8-.4-1.7-.4-2.8 0-1.1.2-2.1.5-2.9.3-.8.7-1.4 1.2-1.9s1.1-.8 1.7-1c.5-.1 1.2-.2 1.8-.2.7 0 1.2 0 1.7.1s.8.2 1.1.3l-.4 1.9L23 6h-1.3c-.9 0-1.6.3-2.2 1-.6.7-.8 1.7-.8 3 0 .6.1 1.1.2 1.6s.3.9.6 1.3c.3.3.6.6 1 .8.4.2.9.3 1.4.3.5 0 .9 0 1.3-.1.3-.1.6-.2.9-.4l.5 1.8c-.5.3-1 .4-1.5.6z"
+                />
+              </svg>
+            </button>
+            <button
+              class="video-player_fullscreen-button"
+              title="На весь Экран"
+            >
+              <svg
+                width="20"
+                height="20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0v6h3V3h3V0H0zm3 14H0v6h6v-3H3v-3zM17 0h-3v3h3v3h3V0h-3zm0 17h-3v3h6v-6h-3v3z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer footer--photo-catalog">
+      <p class="footer_hashtag">#visitsedona</p>
+      <ul class="social-list">
+        <li class="social-list_item">
+          <a class="social_list-item-link" href=""
+            ><img
+              class="social-list-icon-twitter hover"
+              src="img/icon-twitter.svg.svg"
+              alt="twitter"
+          /></a>
+        </li>
+        <li class="social-list_item">
+          <a class="social_list-item-link" href=""
+            ><img
+              class="social-list-icon-facebook hover"
+              src="img/icon-facebook.svg.svg"
+              alt="facebook"
+          /></a>
+        </li>
+        <li class="social-list_item">
+          <a class="social_list-item-link" href=""
+            ><img
+              class="social-list-icon-youtube hover"
+              src="img/icon-youtube.svg.svg"
+              alt="youtube"
+          /></a>
+        </li>
+      </ul>
+      <a href="#" class="copyright">
+        <p class="copyright_text">разработано</p>
+        <svg
+          class="copyright_icon"
+          width="27"
+          height="35"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z"
+          />
+        </svg>
+      </a>
+    </footer>
+    <script src="js/burger-menu.min.js"></script>
+    <script src="js/like-counter.min.js"></script>
+    <script src="js/video-player.min.js"></script>
+    <script src="js/nav.min.js"></script>
+  </body>
+</html>

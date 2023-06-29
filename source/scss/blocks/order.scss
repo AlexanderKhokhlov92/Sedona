@@ -1,0 +1,106 @@
+.order-list_item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: 9px;
+  row-gap: 17px;
+  margin-bottom: 21px;
+}
+
+.order-list_item-icon--house {
+  width: 39px;
+  height: 36px;
+}
+
+.order-list_item-icon--souvenirs {
+  width: 32px;
+  height: 38px;
+}
+
+.order-list_item-icon--food {
+  width: 40px;
+  height: 35px;
+}
+
+.order-list_item-icon {
+  grid-column: 1;
+  grid-row: 1;
+}
+.order-list_item-description {
+  grid-column: 2;
+  grid-row: 2px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.order-list_item-title {
+  font-size: 18px;
+  line-height: 26px;
+  align-self: center;
+}
+
+.order-list {
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-top: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .order-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 60px;
+  }
+  .order-list_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 0;
+    &:nth-child(1) {
+      order: 1;
+    }
+    &:nth-child(2) {
+      order: 3;
+    }
+    &:nth-child(3) {
+      order: 2;
+    }
+  }
+  .order-list_item-icon--house {
+    width: 75px;
+    height: 72px;
+  }
+
+  .order-list_item-icon--souvenirs {
+    width: 64px;
+    height: 75px;
+  }
+
+  .order-list_item-icon--food {
+    width: 76px;
+    height: 68px;
+  }
+  .order-list_item-icon {
+    order: -1;
+    margin-bottom: 26px;
+  }
+
+  .order-list_item-description {
+    text-align: center;
+    max-width: 185px;
+    margin-top: 26px;
+  }
+  .order-list_item-title {
+    font-size: 21px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .order-list_item-description {
+    max-width: 280px;
+  }
+  .order {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

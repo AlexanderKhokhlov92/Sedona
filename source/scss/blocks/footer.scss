@@ -1,0 +1,127 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  box-shadow: 0px 5px 8px 0px rgba(0, 1, 1, 0.2);
+}
+
+.social-list-icon-twitter {
+  padding-top: 16px;
+  padding-bottom: 17.43px;
+  padding-left: 14px;
+  padding-right: 14.5px;
+  display: block;
+}
+
+.social-list-icon-facebook {
+  padding-top: 13px;
+  padding-bottom: 16.1px;
+  padding-left: 19px;
+  padding-right: 19.3px;
+  display: block;
+}
+
+.social-list-icon-youtube {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 13.5px;
+  padding-right: 13.5px;
+  display: block;
+}
+
+.social_list-item-link {
+  display: block;
+  background-color: $basic-blue;
+  &:hover {
+    background-color: $hover-blue;
+  }
+  &:active {
+    background-color: $down-blue;
+  }
+}
+
+.social-list {
+  display: grid;
+  grid-template-columns: 47px 47px 47px;
+  gap: 6px;
+  margin-top: 38px;
+}
+
+.footer_hashtag {
+  margin-top: 38.5px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $bold-text-black;
+}
+
+.copyright {
+  display: flex;
+  margin-top: 40px;
+  padding-bottom: 23px;
+  align-items: center;
+  color: $regular-text-color;
+}
+
+.copyright_icon {
+  display: block;
+  margin-left: 13px;
+  &:hover > path {
+    fill: $basic-blue;
+    opacity: 0.5;
+  }
+  &:active > path {
+    fill: $bold-text-black;
+    opacity: 0.5;
+  }
+}
+
+.copyright_icon > path {
+  fill: $bold-text-black;
+}
+
+.hover {
+  &:active {
+    opacity: 0.3;
+  }
+}
+.footer--photo-catalog {
+  padding-top: 85px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  .copyright {
+    margin-top: 0;
+    padding: 0;
+  }
+  .social-list {
+    margin-top: 0;
+  }
+  .footer_hashtag {
+    margin-top: 0;
+  }
+  .footer--photo-catalog {
+    padding-top: 76px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    max-width: 1200px;
+    padding-right: 120px;
+    padding-left: 120px;
+    margin: 0 auto;
+  }
+  .footer--photo-catalog {
+    padding-top: 121px;
+  }
+}

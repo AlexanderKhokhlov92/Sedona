@@ -1,0 +1,224 @@
+.video-player_wrapper {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  position: relative;
+}
+.video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-player {
+  margin-top: 35px;
+}
+
+/* buttons */
+
+.video-player_play-pause-repeat-button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  grid-column: 1;
+  grid-row: 2;
+  cursor: pointer;
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: 22px;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  background-image: url('../../img/play-grey.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.playing {
+  background-image: url('../../img/pause-grey.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.repeat {
+  background-image: url('../../img/repeat-grey.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video-player-time-range {
+  display: block;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  appearance: none;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  &::-webkit-slider-thumb {
+    width: 13px;
+    height: 13px;
+    background-color: $white;
+    appearance: none;
+    border-radius: 50%;
+  }
+}
+.video-player_subtitles-button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.video-player_fullscreen-button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  margin-left: 31px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+/* control pannel */
+
+.video-player_control-pannel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: -43px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 43px;
+    background-color: $bold-text-black;
+    position: absolute;
+    opacity: 0.6;
+  }
+  &::after {
+    content: '';
+    width: 100%;
+    height: 70px;
+    background-color: $input-background;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+.video-player_right-buttons-wrapper {
+  display: flex;
+  margin-right: 0;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.video-player-time-range-wrapper {
+  grid-column: span 3;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.video-player_right-buttons-wrapper {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+path {
+  fill: #5c6870;
+}
+
+@media (min-width: $tablet-width) {
+  .video-player {
+    cursor: pointer;
+    margin-right: 60px;
+    margin-left: 60px;
+    overflow: hidden;
+    &:hover > .video-player_control-pannel {
+      transform: translatey(0px);
+    }
+  }
+
+  .video-player_control-pannel {
+    margin: 0;
+    padding-left: 35px;
+    padding-right: 37px;
+    background-color: transparent;
+    margin-top: -93px;
+    height: 93px;
+    grid-template-columns: 20px 1fr 83px;
+    transform: translatey(200px);
+    transition: 0.5s;
+
+    &::before {
+      display: none;
+    }
+    &::after {
+      background-color: $bold-text-black;
+      opacity: 0.6;
+      z-index: 0;
+      height: 93px;
+    }
+  }
+  .video-player-time-range-wrapper {
+    grid-column: 2;
+    padding-left: 42px;
+    padding-right: 42px;
+    margin-top: 23px;
+  }
+  .video-player_right-buttons-wrapper {
+    grid-row: 1;
+  }
+  .video-player_play-pause-repeat-button {
+    grid-row: 1;
+    margin: 0;
+    background-image: url('../../img/play-white.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 33px;
+  }
+  .playing {
+    background-image: url('../../img/pause-white.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .repeat {
+    background-image: url('../../img/repeat-white.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  path {
+    fill: $white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-player {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 85px;
+    width: 800px;
+  }
+}

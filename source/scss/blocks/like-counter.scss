@@ -1,0 +1,59 @@
+.like-counter_wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.like-counter_like-icon {
+  display: block;
+}
+.like-counter_like-number {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  margin-top: 4px;
+  margin-left: 14px;
+  color: $bold-text-black;
+}
+
+.like-counter_like-icon > path {
+  fill: $bold-text-black;
+  opacity: 0.3;
+}
+
+.like-counter_like-button {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &:hover > .like-counter_like-icon > path {
+    opacity: 0.8;
+  }
+}
+.liked > svg > path {
+  opacity: 0.8;
+}
+
+@media (min-width: $desktop-width) {
+  .like-counter_like-icon > path {
+    fill: $white;
+  }
+  .like-counter_like-button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    &:hover > .like-counter_like-icon > path {
+      opacity: 1;
+    }
+  }
+  .liked > svg > path {
+    opacity: 1;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .like-counter_like-number {
+    color: $white;
+  }
+}
